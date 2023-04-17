@@ -1,3 +1,8 @@
+<?php 
+
+echo '
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,10 +74,10 @@
 </section>
 <section class="abcd" >
 <div class="aside" id="aside">
-    <button type="button" class="aside-btn" id="first-btn">Press to color the even text's in blue</button>
-    <button type="button" class="aside-btn" id="second-btn">Press to color the odd text's in blue</button>
+    <button type="button" class="aside-btn" id="first-btn">Press to color the even text s in blue</button>
+    <button type="button" class="aside-btn" id="second-btn">Press to color the odd text s in blue</button>
     <button type="button" class="aside-btn" id="third-btn">Hover to hide the first second , forth and fifth</button>
-    <button type="button" class="aside-btn" id="forth-btn">Press to switch the text's till the next refresh:)</button>
+    <button type="button" class="aside-btn" id="forth-btn">Press to switch the text s till the next refresh:)</button>
     <button type="button" class="aside-btn" id="fifth-btn">Press to write the text verticaly</button>
 </div>
 
@@ -157,4 +162,4 @@
 </script>
 </body>
 
-</html>
+</html> ';
