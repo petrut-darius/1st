@@ -72,7 +72,7 @@ echo '
         <img id="main-image" src="viata mea/boxa.jpeg" class="main-image" alt="stai ca stiu">
     </div>
 </section>
-<section class="abcd" >
+<section id="abcd" >
 <div class="aside" id="aside">
     <button type="button" class="aside-btn" id="first-btn">Press to color the even text s in blue</button>
     <button type="button" class="aside-btn" id="second-btn">Press to color the odd text s in blue</button>
