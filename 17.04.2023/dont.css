@@ -1,0 +1,256 @@
+body{
+    background: black;
+    position: relative;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#header{
+    border: 2px white solid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: white;
+    height: 10vh;
+    height: 10svh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding:0 3rem ;
+    margin: 0 2rem;
+}
+
+#textu{
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+}
+
+#Hex{
+    display: flex;
+    justify-content:center;
+    width: 20%;
+}
+
+#Hex > strong:hover{
+    color: black;
+    background-color: white;
+    padding: 0.25rem;
+    border-radius: 1rem;
+
+}
+
+
+#nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    width: 40%;
+    align-items: center;
+}
+
+#nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5vmax;
+}
+
+
+#nav > a:hover{
+    background:white;
+    color: black;
+    border-radius: 1rem;
+    text-decoration: none;
+
+}
+
+#hero{
+    border: 2px white solid;
+    height: 90vh;
+    height: 90svh;
+    margin:  3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main-image    main-image-description";
+    grid-gap: 1rem;
+    place-items: center;
+    position: relative;
+}
+
+#hero-image{
+    grid-area: main-image;
+    display: block;
+    min-height:40vh ;
+    width: 30vw;
+    border-radius: 1rem;
+}
+
+.hero-text{
+    grid-area: main-image-description;
+    padding:  1rem;
+    background: white;
+    border-radius: 1rem;
+    display:inline-block;
+    width: 36vw;
+    max-height:38vh ;
+}
+
+#main{
+    border: 2px white solid;
+    height: 100vh;
+    height: 100svh;
+    margin:3rem 2rem;
+    position: relative;
+    display: block;
+}
+
+.wrapper{
+    border:4px ridge #d8d8d8;
+    width:24vw;
+    width:24svw;
+    position:absolute;
+    top: 14vh;
+    left: 6vw;
+}
+
+.top-border{
+    height:1.9vh;
+    width:24vw;
+    width:24svw;
+    background-image:linear-gradient( to right,#800020, yellow);
+}
+
+.main-text{
+    color:white ;
+    float: left;
+}
+
+.X{
+    float: right;
+    margin: 0.1vh;
+    width: 0.8vw;
+}
+
+.main-image{
+    display: block;
+    width:24vw;
+    width:24svw;
+}
+
+.wrapperSecond{
+    border:4px ridge #d8d8d8;
+    width:24vw;
+    width:24svw;
+    position:absolute;
+    top: 0vh;
+    left: 56vw;
+}
+
+.wrapperThird{
+    border: 4px ridge #d8d8d8;
+    width: 24vw;
+    width: 24svw;
+    position: absolute;
+    top: 10vh;
+    left: 36vw;
+}
+
+.main-btn{
+    position: fixed;
+    bottom: 2vh;
+    bottom: 2svh;
+    right: 2vw;
+    right: 2svw;
+    padding: 1vh 1vw;
+    padding: 1svh 1svw;
+    border-radius: 1vh;
+    border-radius: 1svh;
+}
+
+
+/* toogle classes*/
+.hero-text-toogleClass{
+    background: black;
+    color: white;
+}
+
+.bkgWhite{
+    background: white;
+}
+
+.bkgblack-colorwhite{
+    background: black;
+    color: white;
+}
+
+/* aside */
+
+#abcd{
+    border: 2px #d8d8d8 solid;
+    height: 90vh;
+    height: 90svh;
+    margin: 3rem 2rem;
+}
+
+.aside{
+    border: 2px solid white;
+    margin-left: 2rem;
+    float: left;
+    width: 10vw;
+    width: 10svw;
+    padding:0.4rem ;
+}
+
+.aside-btn{
+    background: white;
+    margin:  1.9rem;
+    width: 50%;
+}
+
+.containerAsideText{
+    border: 2px solid white;
+    margin-right: 4rem;
+    width: 74vw;
+    width: 74svw;
+    float: right;
+    
+}
+
+.asideText{
+    margin: 1rem;
+    display: block;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 2rem;
+    color: white;
+}
+
+.textColorBlue{
+    color: blue;
+}
+
+.textColorRed{
+    color: red;
+}
+
+.verticalyText{
+    writing-mode: vertical-lr;
+    display: block;
+    flex-direction: column;
+
+}
+
+/*media*/
+
+
+@media only screen and (max-width: 969px){
+    body{
+        background-color: brown;
+    }
+    #main-text{
+        min-width:25Vmin;
+        height:20Vmax;
+        overflow: auto;
+    }
+}
