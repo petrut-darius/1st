@@ -187,7 +187,6 @@ body{
 /* aside */
 
 #abcd{
-    border: 2px #d8d8d8 solid;
     height: 90vh;
     height: 90svh;
     margin: 3rem 2rem;
@@ -239,6 +238,28 @@ body{
     display: block;
     flex-direction: column;
 
+}
+
+/*php*/
+
+
+
+.calculator{
+   border: #d8d8d8 2px solid;
+   height:30vh;
+   height: 30svh;
+   margin: 3rem 2rem;
+   color: white;
+}
+
+.calculator > *{
+    background-color: #800020;
+    text-align: center;
+    margin-block: 13.5vh;
+    margin-block: 13.5svh;
+    line-height: 3vh;
+    line-height: 3svh;
+    
 }
 
 /*media*/
