@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,14 +79,15 @@
 </div>
 </section>
 <section class="calculator">
-    <form action="raspuns.php" method="POST" >
-        <?php 
-            echo 'Suma a doua numere  : ';
-        ?>
-        <input type="text" name="a" placeholder="A">
-        <input type="text" name="b" placeholder="B">
+    <form id="form1" name="formular1" method="POST" >
+        <?php echo 'Suma a doua numere  : '; ?>
+        <input type="number" id="a" placeholder="valoarea_1">
+        <input type="number" id="b" placeholder="valoarea_2">
         <input type="submit" name="trimite" value="Submit">
     </form>
+    <div id="raspunsul_sumei" style="background: white; text-align: center; font-size: 36px;color:slategrey"></div>
+
+
 </section>
 <!----button---->
             <button type="button" class="main-btn" id="main-btn">Press to add Classes</button>
@@ -149,6 +148,44 @@
         $("#fifth-btn").click(function(){
             $("#containerAsideText i").toggleClass("verticalyText");
         });
+
+
+
+
+            $("#form1").submit(function (event) {
+                var formData = {
+                    a: $("#a").val(),
+                    b: $("#b").val(),
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "raspuns.php",
+                    data: formData,
+                    dataType: "json",
+                    encode: true,
+                }).done(function (data) {
+                    //Aici pui ce vrei sa se intample odata ce s-a rezolvat.
+                    $("#raspunsul_sumei").html(data);
+                    alert("Raspunsul este " + data);
+                });
+
+                event.preventDefault();
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     });
 </script>
 </body>
